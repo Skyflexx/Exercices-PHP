@@ -17,6 +17,7 @@
 
     $montantDu = 163;
     $montantVerse = 300;
+
     $resteDu = $montantVerse - $montantDu; 
     
     echo "Montant à payer : $montantDu € <br> Montant versé : $montantVerse € <br> Reste du : $resteDu €<br>";
@@ -25,7 +26,9 @@
 // CALCUL DU NOMBRE DE BILLETS DE 10
      
 
-    $facto = intdiv($resteDu, 10); // Variable qui sera utilisée pour diviser par 10, 5, 2 et 1
+    $facto = intdiv($resteDu, 10); // Variable qui sera utilisée pour diviser par 10, 5, 2 et 1.
+
+    // on fait une division entière pour obtenir le nbr de fois où on peut diviser par 10.
 
     $dix = floor($facto);   // Contient le nombre de billet de 10, sans la virgule avec Floor
 
@@ -35,7 +38,7 @@
  // CALCUL DU NOMBRE DE BILLETS DE 5   
 
 
-    $facto = intdiv($resteDu, 5); // On redivise par 5 pour obtenir le nombre de billet de 5
+    $facto = intdiv($resteDu, 5); // On redivise par 5 pour obtenir le nombre de fois où le resteDu est divisable par 5
 
     $cinq = floor($facto); // On obtient ainsi le nombre de billets en retirant ce qu'il y a après la virgule
 
