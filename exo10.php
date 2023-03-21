@@ -15,7 +15,7 @@
 
 <?php
 
-    $montantDu = 163;
+    $montantDu = 200;
     $montantVerse = 300;
 
     $resteDu = $montantVerse - $montantDu; 
@@ -51,16 +51,13 @@
 
     $deux = floor($facto);   
 
-    $resteDu = $resteDu - ($deux * 2);
+    $resteDu = $resteDu - ($deux * 2);     // ResteDu donnera le nombre de pièces de 1.
 
 
 // CALCUL DU NOMBRE DE PIECES DE 1  
-
-    $facto = intdiv($resteDu, 1);
-
-    $un = floor($facto);     
     
-    echo "Rendu de monnaie : <br> $dix billets de 10€ - $cinq billets de 5€ - $deux pièces de 2 € - $un pièces de 1€ "
+    
+    echo "Rendu de monnaie : <br> $dix billets de 10€ - $cinq billets de 5€ - $deux pièces de 2 € - $resteDu pièces de 1€ "
 
 ?>
 
