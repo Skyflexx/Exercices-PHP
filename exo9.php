@@ -15,11 +15,11 @@
 
 <?php
 
-    $age = 20;
+    $age = 17;
     $sexe = "F";
 
-    $masculin = ($age <= 35 and $sexe == "F") ? true : false; 
-    $feminin = ($age >= 20 and $sexe == "M") ? true : false;
+    $impotMasculin = ($age > 18 && $age <= 35 && $sexe == "F"); // Si la condition est remplie, ça renvoie True
+    $impotFeminin = ($age > 18 && $age >= 20 && $sexe == "M") ;
 
     /*Permet de stocker des conditions dans une variable. Dans un premier temps on met les conditions,
     suivi de ? et les resultats retournés derrière en fct de si la condition est remplie ou non.
@@ -28,11 +28,10 @@
     */
     
 
-    echo "Age : $age <br> Sexe : $sexe <br>";
-    
-    if ($age >= 18) {
+    echo "Age : $age <br> Sexe : $sexe <br>";      
 
-        if($masculin || $feminin ){  // Si $masculin ou $feminin = true, alors
+        if($impotMasculin || $impotFeminin ){  // Si $masculin ou $feminin = true, alors
+            
             echo "La personne est imposable";
 
         } else {
@@ -40,11 +39,7 @@
     }
     
     
-    } else {
-
-        echo "La personne est non imposable";
-
-    }
+   
 
 ?>
 
