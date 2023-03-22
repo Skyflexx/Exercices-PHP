@@ -15,11 +15,11 @@
 
 <?php
 
-    $age = 17;
-    $sexe = "F";
+    $age = 18;
+    $sexe = "M";
 
-    $impotMasculin = ($age > 18 && $age <= 35 && $sexe == "F"); // Si la condition est remplie, ça renvoie True
-    $impotFeminin = ($age > 18 && $age >= 20 && $sexe == "M") ;
+    $impotFeminin = ($age >= 18 && $age <= 35 && $sexe == "F"); // Si la condition est remplie, ça renvoie True
+    $impotMasculin = ($age >= 20 && $sexe == "M") ;
 
     /*Permet de stocker des conditions dans une variable. Dans un premier temps on met les conditions,
     suivi de ? et les resultats retournés derrière en fct de si la condition est remplie ou non.
