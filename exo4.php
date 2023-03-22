@@ -17,8 +17,15 @@
         $phraseInv = strrev($phraseModif); //On inverse la phrase
             
 
-        if($phraseModif === $phraseInv) 
+        if($phraseModif === $phraseInv){
+
             echo "La phrase $phrase est un palindrome";
+
+            } else {
+
+                echo "la phrase $phrase n'est pas un palindrome";
+                
+            }
                 
      
 
