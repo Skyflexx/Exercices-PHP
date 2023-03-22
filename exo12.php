@@ -19,8 +19,8 @@
 $tableau = array("Mickael" => "fra", "Virgile" => "esp", "Marie-Claire" => "eng");
 
 
-/* "Mickael" c'est la clé et "fra" c'est l'élément. 
- On peut jouer avec pour afficher plusieurs choses. */
+// "Mickael" c'est la clé et "fra" c'est l'élément. 
+ 
 
 
 foreach ($tableau as $nom => $langue){
