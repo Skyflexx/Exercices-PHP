@@ -9,6 +9,54 @@
 
 
 </p>
+
+<h2>
+
+<?php
+
+// ------------------ TEST AVEC LE SWITCH CASE -----------------------------------
+
+$tableau = array("Mickael" => "fra", "Virgile" => "esp", "Marie-Claire" => "eng");
+
+// la fct sayhello remplace les boucles. "Dans le cas où... alors."
+
+function sayHello ($name, $lang){
+
+    switch($lang){
+
+        case "fra" : echo "Salut ".$name."<br>";
+
+        break; // Ne pas oublier le break pour annoncer la fin de la fonction
+
+        case "esp" : echo "Hola ".$name."<br>";
+
+        break;
+
+        case "eng" : echo "Hello ".$name."<br>";
+
+        break;
+    }
+
+};
+
+
+// "Mickael" c'est la clé et "fra" c'est l'élément.  
+
+
+foreach ($tableau as $name => $lang){
+    
+    sayHello($name, $lang);
+
+}
+    
+/* Foreach permet de parcourir un tableau. On met le nom du tableau, puis
+
+la clé => l'item dans des variables */
+
+    
+?>
+
+</h2>
     
 
 
@@ -16,11 +64,13 @@
 
 <?php
 
+// TEST AVEC DES CONDITIONS
+
 $tableau = array("Mickael" => "fra", "Virgile" => "esp", "Marie-Claire" => "eng");
 
 
 // "Mickael" c'est la clé et "fra" c'est l'élément. 
- 
+
 
 
 foreach ($tableau as $nom => $langue){
@@ -40,7 +90,9 @@ foreach ($tableau as $nom => $langue){
 
     echo "$nom <br>"; // Puis on affiche le nom associé à l'objet parcouru
 
-}
+};
+
+
     
 /* Foreach permet de parcourir un tableau. On met le nom du tableau, puis
 
@@ -50,8 +102,6 @@ la clé => l'item dans des variables */
 ?>
 
 </h2>
-
-
 
 <h2>
     
