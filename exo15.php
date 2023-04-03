@@ -14,7 +14,7 @@
 
 <?php    
 
-    class personne{
+    class Personne{
 
         // initialisation des variables attendues
 
@@ -51,8 +51,8 @@
 
     // La classe est créée, maintenant on créé nos personnes. On les instancie.
 
-    echo $p1 = new personne ("Jean", "meuh", "1985-01-02"); // On instancie la personne, et on va afficher directement le resultat car le toString lance la fonction calculAge.
-    echo $p2 = new personne ("DUCHEMIN", "Alice", "1985-01-17");
+    echo $p1 = new Personne ("Jean", "meuh", "1985-01-02"); // On instancie la personne, et on va afficher directement le resultat car le toString lance la fonction calculAge.
+    echo $p2 = new Personne ("DUCHEMIN", "Alice", "1985-01-17");
 ?>
 
  </h2>
